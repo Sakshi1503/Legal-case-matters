@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form 1</title> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/DTE.css">
+    <link rel="stylesheet" type="text/css" href="css/nav-style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        .body {
+            height: 100%;
+            margin: 0;
+            font: 400 10px/1.8 "Lato", sans-serif;
+            margin-bottom: 60px; /* Margin bottom by footer height */
+            color: #777;
+        }
+    </script>
+</head>
+<body>
+    <!-- As a heading -->
+    <div class="container-fluid  " style="padding-left: 0px; padding-right: 0px;">
+        <div class="row" style="margin-left: 5px;">
+<!-- 
+<div class="col-sm"> 
+-->
+<img src="download.jpg" class="img-responsive my-img mt-3 mr-3 ml-3 mb-3" style="height: 60px; width: 60px; margin-left: 15px;">
+<!-- <div class="col-sm"> -->
+    <span class="navbar-brand h1 mt-4">DIRECTORATE OF TECHNICAL EDUCATION, GUJARAT</span>
+<!-- div>
+</div>-->
+</div> 
+<div class="navigation" id="navbar">
+    <div class="dropdown">   <!-- navigation STARTS here -->
+        <label for="show-menu" class="show-menu" style="margin-bottom: 0px">Show Menu</label>
+        <input type="checkbox" id="show-menu" role="button">
+        <ul id="menu">
+            <li><a href="adminhome.html" class="active main-link">HOME</a></li>
+            <li><a href="#" class="main-link">CASE REPORTS &nbsp;<i class="fa fa-caret-down"></i></a>
+                <ul class="hidden">
+                    <li><a href="#">BASED ON STATUS</a></li>
+                    <li><a href="#">COURT WISE</a></li>
+                    <li><a href="#">PETITION YEAR</a></li>
+                    <li><a href="#">DEPARTMENT OF EDUCATION</a></li>
+                    <li><a href="#">DURATION WISE</a></li>
+                    <li><a href="#">BASED ON THE CAUSE</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="main-link">MANAGE CASE &nbsp;<i class="fa fa-caret-down"></i></a>
+                <ul class="hidden">
+                    <li><a href="addcase.html">ADD A NEW CASE</a></li>
+                    <li><a href="#">UPDATE CASE</a></li>
+                    <li><a href="#">DELETE CASE</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="main-link">MANAGE USERS &nbsp;<i class="fa fa-caret-down"></i></a>
+                <ul class="hidden">
+                    <li><a href="addadmin.html">ADD USER</a></li>
+                    <li><a href="#">DELETE USER</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>              <!-- navigation ENDS here -->
+
+
+</div>
+
+<div class="container" style="margin-top:200px; width: 80%; margin-bottom: 100px">
+    <h3 style="text-align: center; padding-bottom: 10px;">Form 1</h3>
+    
+
+    <form action="" method="post">
+        <div class="form-row" id="heading" align="center">
+            <h3 style="width: 100%;">Completed Case in Honorable Court</h3>
+        </div>
+        <div class="form-row">
+            <div class="col-sm">
+                <label for="writNumber">Writ Petition Number</label>
+                <input type="text" class="form-control" id="writNumber" name="writNumber" placeholder="Writ Number">
+            </div>
+            <div class="col-sm-1">
+            </div>
+            <div class="col-sm">
+                <label for="writYear">Case Year</label>
+                <input type="Date" class="form-control" id="writYear" name="writYear" placeholder="Writ Year">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-sm">
+                <label for="respondantName">Name of Party</label>
+                <input type="text" class="form-control" id="partyName" name="partyName" placeholder="Party Name">
+            </div>
+            <div class="col-sm-1">
+            </div>
+            <div class="col-sm">
+                <label for="partySection">Section of party</label>
+                <input type="text" class="form-control" id="partySection" name="partySection" placeholder="Party Section">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-sm">
+                <label for="judgementDate">Judgement Date</label>
+                <input type="date" class="form-control" id="judgementDate" name="judgementDate" placeholder="Enter the date of judgement">
+            </div>
+            <div class="col-sm-1">
+            </div>
+            <div class="col-sm"></div>
+        </div>
+        <div class="form-row">
+            <div class="col-sm-12">
+                <label for="judgementDescr">Brief the Judgement</label>
+                <input type="text" class="form-control" id="judgementDescr" name="judgementDescr" placeholder="Give the details of Judgement">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-sm">
+                <label>Opinion of DTE</label><br>
+                <div class="form-check form-check-inline col-sm-4">
+                    <input class="form-check-input" type="radio" id="appealableDTE" name="appealableDTE" value="Yes">
+                    <label class="form-check-label" for="inlineRadio1">Appealable</label>
+                </div>
+
+                <div class="form-check form-check-inline col-sm-1">
+                    <input class="form-check-input" type="radio" id="appealableDTE" name="appealableDTE" value="No">
+                    <label class="form-check-label" for="inlineRadio1">Acceptable</label>
+                </div>
+            </div>
+            <div class="col-sm-1">
+            </div>
+            <div class="col-sm">
+                <label>Opinion of AGP</label><br>
+                <div class="form-check form-check-inline col-sm-4">
+                    <input class="form-check-input" type="radio" id="appealableAGP" name="appealableAGP" value="Yes">
+                    <label class="form-check-label" for="inlineRadio1">Appealable</label>
+                </div>
+                <div class="form-check form-check-inline col-sm-1">
+                    <input class="form-check-input" type="radio" id="appealableAGP" name="appealableAGP" value="No">
+                    <label class="form-check-label" for="inlineRadio1">Acceptable</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row" id="opinionD" style="display: none; padding-left: 0px; padding-right: 0px;">
+            <label for="opinionDTE">Brief opinion(DTE)</label>
+            <input type="text" class="form-control" id="opinionDTE" name="opinionDTE" placeholder="Opinion (in brief) of DTE">
+        </div>
+        <div class="form-row" id="opinionA" style="display: none; padding-left: 0px; padding-right: 0px;">
+            <label for="opinionAGP">Brief opinion(AGP)</label>
+            <input type="text" class="form-control" id="opinionAGP" name="opinionAGP" placeholder="Opinion(in brief) of AGP">
+        </div>
+
+        <div class="form-row">
+            <div class="col-sm">
+                <label for="appealDateED">Date of Appeal</label>
+                <input type="date" class="form-control" id="appealDateED" name="appealDateED" placeholder="Date of Appeal">
+            </div>
+            <div class="col-sm-1">
+            </div>
+            <div class="col-sm">
+                <label for="judgementLastDate">Judgement Implementation Deadline</label>
+                <input type="date" class="form-control" id="judgementLastDate" name="judgementLastDate" placeholder="Last date for implementation">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-sm-12">
+                <label for="corED">Details of communication with E.D.</label>
+                <input type="text" class="form-control" id="corED" name="corED" placeholder="Details of communication">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-sm-12">
+                <label for="remarks17_1">Remarks</label>
+                <input type="text" class="form-control" id="remarks17_1" name="remarks17_1" placeholder="Remarks by respondant">
+            </div>
+        </div>
+
+        <center class="mt-3">
+            <button type="submit" class="btn" form="nameform" value="Submit">Submit</button>
+        </center>
+    </form>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('input[type="radio"]').click(function() {
+            if($(this).attr('id') == 'appealableDTE' && $(this).attr('value') == 'Yes' ) {
+                $('#opinionD').show();           
+            }
+            else if($(this).attr('id') == 'appealableDTE' && $(this).attr('value') == 'No'  ) {
+                $('#opinionD').hide();           
+            }
+            else{}
+        });
+    });            
+    $(document).ready(function() {
+        $('input[type="radio"]').click(function() {
+            if($(this).attr('id') == 'appealableAGP' && $(this).attr('value') == 'Yes' ) {
+                $('#opinionA').show();           
+            }
+            else if($(this).attr('id') == 'appealableAGP' && $(this).attr('value') == 'No'  ) {
+                $('#opinionA').hide();           
+            }
+            else{}  
+
+        });
+    });
+</script>
+<script type="text/javascript">
+         window.onscroll = function() {myFunction()};
+
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+
+</script>
+
+<footer class="footer fixed-bottom">
+      <div class="container-fluid">
+        <span class="text-muted">DTE HACKATHON @2k18</span>
+      </div>
+ </footer>
+
+</body>
+</html>
